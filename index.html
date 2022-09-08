@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets//style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid login-page">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-4">
+                <form class="loginForm" id="loginForm">
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Username</label>
+                      <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary loginBtn">Login</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid to-admin">
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-danger logout mt-2 mb-2">Log out</button>
+                <input class="form-control me-2" type="search" id="search-input" placeholder="Search"
+                    aria-label="Search">
+
+                <table class="table mt-4">
+                    <thead>
+                        <tr id="tr_head">
+
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                
+                <form id="add_form" name="0" class="mt-2">
+                    <div class="form-group mt-2">
+                        <label for="name">Vacancy name:</label>
+                        <input type="text" class="form-control mt-2" id="name" placeholder="name">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="category">Category name:</label>
+                        <input type="text" class="form-control mt-2" id="category" placeholder="category">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <div class="container-fluid to-client">
+       <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-danger logout mt-2 mb-2">Log out</button>
+            <input class="form-control me-2" type="search" id="search-input_client" placeholder="Search"
+                aria-label="Search">
+
+            <table class="table_client mt-4">
+                <thead>
+                    <tr id="tr_head_client">
+
+                    </tr>
+                </thead>
+                <tbody id="table_body_client">
+                    
+
+                </tbody>
+            </table>
+        </div>
+       </div>
+   </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
